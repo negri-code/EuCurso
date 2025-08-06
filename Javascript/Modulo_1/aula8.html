@@ -1,0 +1,25 @@
+<script>
+    let peso = 68;
+    let altura = 1.65;
+
+    let imc = peso / (altura**2);
+
+    if (imc <= 18.5) {
+        alert("magreza : "+ imc)
+    } else if (imc < 25){
+        alert("normal: " + imc)
+    } else if (imc < 30) {
+        alert("sobrepeso: " + imc)
+    } else if (imc < 40 ) {
+        alert("obesidade: " + imc)
+    } else {
+        alert("obesidade grave: "+ imc)
+    }
+</script>
+<!-- 
+- menor que 18,5 = magreza
+- entre 18,6 e 24,9 = normal
+- entre 25 e 29,9 = sobrepeso
+- entre 30 e 39,9 = obesidade
+- maior que 40 = obesidade grave 
+-->
