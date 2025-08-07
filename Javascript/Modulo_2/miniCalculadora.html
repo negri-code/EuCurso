@@ -1,0 +1,45 @@
+<script>
+    let n1;
+    let n2;
+    let calculo; 
+    let resultado;
+
+    n1 = parseFloat(prompt("Digite o primeiro número"));
+    calculo = prompt("Digite o cálculo: Adição (+), Subtração(-), Divisão (/), Multiplicação(*) e elevação (**). ");
+    n2 = parseFloat(prompt("Digite o segundo número"));
+
+    if (calculo == "+") {
+        resultado = n1 + n2;
+    } else if (calculo == "-") {
+        resultado = n1 - n2;
+    } else if (calculo == "/") {
+        resultado = n1 / n2;
+    } else if (calculo == "*") {
+        resultado = n1 * n2;
+    } else if (calculo == "**") {
+        resultado = n1 ** n2;
+    }
+
+    alert(resultado);
+
+    while (true) {
+        calculo = prompt("Digite o cálculo: +, -, /, *, ** ou 's' para sair:");
+        if (calculo === "s") break;
+
+        n2 = parseFloat(prompt("Digite o segundo número"));
+
+        if (calculo == "+") {
+            resultado += n2;
+        } else if (calculo == "-") {
+            resultado -= n2;
+        } else if (calculo == "/") {
+            resultado /= n2;
+        } else if (calculo == "*") {
+            resultado *= n2;
+        } else if (calculo == "**") {
+            resultado **= n2;
+        }
+
+        alert(resultado);
+    }
+</script>
